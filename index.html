@@ -21,6 +21,7 @@ Matthieu Terris
 <style>
 
 body {
+    display: flex;
     font-family: 'Lobster', cursive;
     font-family: 'Raleway', sans-serif;
     font-size: 12pt;
@@ -46,6 +47,26 @@ a {
     100% { background-position: 200% 0; }
 }
 
+.content-container {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.content-container img {
+    width: 100%;
+    max-width: 200px;
+    margin-right: 20px;
+}
+
+.text-container {
+    text-align: justify;
+    font-size: 100%;
+}
+
+.spacer {
+    margin-top: 110px;
+}
 
 </style>
 
@@ -66,9 +87,10 @@ a {
             </div>
         <div style="margin-top: 70px;"></div>
 
-
-        <div style="text-align:justify;">
-            <p><img src="im/me2.png" alt="" width="20%" style="float:left;margin-right:20px;">
+        <div class="content-container">
+            <img src="im/me2.png" alt="">
+            <div class="text-container">
+                <p>
                 I am currently a postdoctoral researcher within the <a href="https://team.inria.fr/mind/">MIND</a> team at INRIA, working on ML techniques for EEG data,
                 data augmentation and inverse problems. I obtained my PhD from the Biomedical and Astronomical Signal Processing (BASP) laboratory
                 at <a href="https://www.hw.ac.uk/index.htm">Heriot-Watt University</a>, Edinburgh, UK under the supervision
@@ -76,10 +98,11 @@ a {
                 Feel free to reach me by email :)
                 <br /><br />
                 Contact: matthieu.terris@gmail.com
-            </p>
+                </p>
+            </div>
         </div>
 
-        <div style="margin-top: 110px;"></div>
+        <div style="margin-top: 40px;"></div>
 
         <p style="font-size:100%; text-align:justify">
 
@@ -95,6 +118,50 @@ a {
                     Check it out! <br /> <a href="https://github.com/deepinv/deepinv">[github]</a> <a href="https://deepinv.github.io/">[doc]</a>
                 </td>
                 </tr>
+                </tbody>
+                </table>
+            </p>
+
+
+            <h3>Preprints</h3>
+                <table style="width:100%; border-collapse:collapse; font-size:100%; text-align:justify">
+                <tbody>
+                <tr>
+                <td style="background-color:white; border-collapse:collapse; padding: 5px; vertical-align: top; width: 15%; border: 0px;">
+                2023
+                </td>
+                <td style="background-color:white; border-collapse:collapse; padding: 5px; vertical-align: top; width: 85%; border: 0px;">
+                <b>	Equivariant plug-and-play image reconstruction</b>,
+                <u>Matthieu Terris*</u>, Thomas Moreau, Nelly Pustelnik, Julian Tachella<br />
+                <a href=https://arxiv.org/abs/2312.01831>arxiv</a> <br />
+                    [<a href=https://arxiv.org/pdf/2312.01831.pdf>PDF</a>]
+                </td>
+                </tr>
+
+                <tr>
+                <td style="background-color:white; border-collapse:collapse; padding: 5px; vertical-align: top; width: 15%; border: 0px;">
+                2023
+                </td>
+                <td style="background-color:white; border-collapse:collapse; padding: 5px; vertical-align: top; width: 85%; border: 0px;">
+                <b>	Meta-Prior: Meta learning for Adaptive Inverse Problem Solvers</b>,
+                <u>Matthieu Terris*</u>, Thomas Moreau<br />
+                <a href=https://arxiv.org/abs/2311.18710>arxiv</a> <br />
+                    [<a href=https://arxiv.org/pdf/2311.18710.pdf>PDF</a>]
+                </td>
+                </tr>
+
+                <tr>
+                <td style="background-color:white; border-collapse:collapse; padding: 5px; vertical-align: top; width: 15%; border: 0px;">
+                2023
+                </td>
+                <td style="background-color:white; border-collapse:collapse; padding: 5px; vertical-align: top; width: 85%; border: 0px;">
+                <b>	Plug-and-play imaging with model uncertainty quantification in radio astronomy</b>,
+                <u>Matthieu Terris*</u>, Chao Tang*, Adrian Jackson, Yves Wiaux<br />
+                <a href=https://arxiv.org/abs/2312.07137>arxiv</a> <br />
+                    [<a href=https://arxiv.org/pdf/2312.07137.pdf>PDF</a>]
+                </td>
+                </tr>
+
                 </tbody>
                 </table>
             </p>
